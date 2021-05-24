@@ -436,7 +436,7 @@ section{
     }
   }
 }
-#clinic.float_menu{
+#clinic{
   background: #fff6f2;
   padding: 140px 0 200px;
   .inner{
@@ -780,7 +780,7 @@ footer{
 
 
 @media screen and ( max-width: 1320px) {
-  #clinic.float_menu{
+  #clinic{
     .inner{
       flex-direction: column-reverse;
       align-items: flex-start;
@@ -913,7 +913,7 @@ footer{
       }
     }
   }
-  #clinic.float_menu{
+  #clinic{
     padding: 100px 0 140px;
     .inner{
       flex-direction: column-reverse;
@@ -1236,7 +1236,8 @@ footer{
     }
   }
 
-  #clinic.float_menu{
+  #clinic{
+    padding: 50px 0 70PX;
     .inner{
       flex-direction: column-reverse;
       align-items: flex-start;
@@ -1502,7 +1503,8 @@ footer{
         }
       }
     }
-  #clinic.float_menu{
+  #clinic{
+    padding: 5vw 0 14vw;
     .inner{
       .list_wrap{
         height: 84vw;

@@ -467,42 +467,42 @@ section .inner .list_wrap li a div p + p {
   width: 100%;
 }
 
-#clinic.float_menu {
+#clinic {
   background: #fff6f2;
   padding: 140px 0 200px;
 }
 
-#clinic.float_menu .inner .section_title p {
+#clinic .inner .section_title p {
   margin-bottom: 10px;
   color: #b36960;
   font-size: 16px;
   text-transform: capitalize;
 }
 
-#clinic.float_menu .inner .list_wrap {
+#clinic .inner .list_wrap {
   width: 100%;
   height: 420px;
 }
 
-#clinic.float_menu .inner .list_wrap li {
+#clinic .inner .list_wrap li {
   float: left;
   position: relative;
   width: 250px;
 }
 
-#clinic.float_menu .inner .list_wrap li:not(:first-child) {
+#clinic .inner .list_wrap li:not(:first-child) {
   margin-left: 60px;
 }
 
-#clinic.float_menu .inner .list_wrap li a {
+#clinic .inner .list_wrap li a {
   display: block;
 }
 
-#clinic.float_menu .inner .list_wrap li a * {
+#clinic .inner .list_wrap li a * {
   transition: 0.3s ease-in-out;
 }
 
-#clinic.float_menu .inner .list_wrap li a div {
+#clinic .inner .list_wrap li a div {
   position: absolute;
   display: inline-block;
   margin: 0;
@@ -515,7 +515,7 @@ section .inner .list_wrap li a div p + p {
   box-sizing: border-box;
 }
 
-#clinic.float_menu .inner .list_wrap li a div:before {
+#clinic .inner .list_wrap li a div:before {
   content: '+';
   position: absolute;
   margin: -18px -3px 0 0;
@@ -525,15 +525,15 @@ section .inner .list_wrap li a div p + p {
   font-size: 30px;
 }
 
-#clinic.float_menu .inner .list_wrap li a:hover div {
+#clinic .inner .list_wrap li a:hover div {
   background: #b36960;
 }
 
-#clinic.float_menu .inner .list_wrap li a:hover div:before, #clinic.float_menu .inner .list_wrap li a:hover div p {
+#clinic .inner .list_wrap li a:hover div:before, #clinic .inner .list_wrap li a:hover div p {
   color: #fff;
 }
 
-#clinic.float_menu .inner .list_wrap .section_list {
+#clinic .inner .list_wrap .section_list {
   float: left;
   display: block;
   position: relative;
@@ -541,16 +541,16 @@ section .inner .list_wrap li a div p + p {
   background: red;
 }
 
-#clinic.float_menu .inner .list_wrap .section_list:not(:first-child) {
+#clinic .inner .list_wrap .section_list:not(:first-child) {
   margin-left: 60px;
 }
 
-#clinic.float_menu .inner .list_wrap .section_list img {
+#clinic .inner .list_wrap .section_list img {
   display: block;
   width: 100%;
 }
 
-#clinic.float_menu .inner .list_wrap .section_list div {
+#clinic .inner .list_wrap .section_list div {
   position: absolute;
   display: inline-block;
   padding: 25px 20px;
@@ -856,25 +856,25 @@ footer .footer_bottom .sns a img {
 }
 
 @media screen and (max-width: 1320px) {
-  #clinic.float_menu .inner {
+  #clinic .inner {
     flex-direction: column-reverse;
     align-items: flex-start;
     width: 100%;
   }
-  #clinic.float_menu .section_img {
+  #clinic .section_img {
     width: 100%;
     height: auto;
   }
-  #clinic.float_menu .list_wrap {
+  #clinic .list_wrap {
     overflow-x: scroll;
     overflow-y: visible;
     width: 100%;
     height: 420px;
   }
-  #clinic.float_menu .list_wrap ul {
+  #clinic .list_wrap ul {
     width: 1220px;
   }
-  #clinic.float_menu .list_wrap li {
+  #clinic .list_wrap li {
     width: 250px;
   }
 }
@@ -972,15 +972,15 @@ footer .footer_bottom .sns a img {
   #signature .inner .section_img {
     height: auto;
   }
-  #clinic.float_menu {
+  #clinic {
     padding: 100px 0 140px;
   }
-  #clinic.float_menu .inner {
+  #clinic .inner {
     flex-direction: column-reverse;
     align-items: flex-start;
     width: 100%;
   }
-  #clinic.float_menu .inner .list_wrap {
+  #clinic .inner .list_wrap {
     overflow-x: scroll;
     overflow-y: visible;
     display: inline-block;
@@ -988,19 +988,19 @@ footer .footer_bottom .sns a img {
     height: 420px;
     text-align: left;
   }
-  #clinic.float_menu .inner .list_wrap ul {
+  #clinic .inner .list_wrap ul {
     width: 1220px;
     display: inline-block;
   }
-  #clinic.float_menu .inner .list_wrap li {
+  #clinic .inner .list_wrap li {
     width: 250px;
   }
-  #clinic.float_menu .inner .list_wrap li a div:before {
+  #clinic .inner .list_wrap li a div:before {
     top: 28px;
     right: 28px;
     font-size: 26px;
   }
-  #clinic.float_menu .section_img {
+  #clinic .section_img {
     width: 100%;
     height: auto;
   }
@@ -1187,16 +1187,19 @@ footer .footer_bottom .sns a img {
   #signature .inner .section_title {
     width: auto;
   }
-  #clinic.float_menu .inner {
+  #clinic {
+    padding: 50px 0 70PX;
+  }
+  #clinic .inner {
     flex-direction: column-reverse;
     align-items: flex-start;
     width: 100%;
   }
-  #clinic.float_menu .section_img {
+  #clinic .section_img {
     width: 100%;
     height: auto;
   }
-  #clinic.float_menu .list_wrap {
+  #clinic .list_wrap {
     overflow-x: scroll;
     overflow-y: visible;
     display: inline-block;
@@ -1204,11 +1207,11 @@ footer .footer_bottom .sns a img {
     height: 420px;
     text-align: left;
   }
-  #clinic.float_menu .list_wrap ul {
+  #clinic .list_wrap ul {
     width: 1220px;
     display: inline-block;
   }
-  #clinic.float_menu .list_wrap li {
+  #clinic .list_wrap li {
     width: 250px;
   }
   #editoressey .essey_bxslider .essey_img {
@@ -1412,22 +1415,25 @@ footer .footer_bottom .sns a img {
   section .inner .list_wrap li a div p + p {
     font-size: 2.8vw;
   }
-  #clinic.float_menu .inner .list_wrap {
+  #clinic {
+    padding: 5vw 0 14vw;
+  }
+  #clinic .inner .list_wrap {
     height: 84vw;
   }
-  #clinic.float_menu .inner .list_wrap ul {
+  #clinic .inner .list_wrap ul {
     width: 265vw;
   }
-  #clinic.float_menu .inner .list_wrap li {
+  #clinic .inner .list_wrap li {
     width: 50vw;
   }
-  #clinic.float_menu .inner .list_wrap li a div {
+  #clinic .inner .list_wrap li a div {
     padding: 5vw 4vw;
     bottom: -16vw;
     right: -6vw;
     box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.1);
   }
-  #clinic.float_menu .inner .list_wrap li a div:before {
+  #clinic .inner .list_wrap li a div:before {
     margin: -3.6vw -.6vw 0 0;
     top: 5.6vw;
     right: 5.6vw;
