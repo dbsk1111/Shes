@@ -65,12 +65,12 @@ $(function(){
 
 
     // 탑 버튼
-    let dHeight = $(document).height();
+    dHeight = $(document).height();
     let wHeight = $(window).height();
     let winScrollTop = $(window).scrollTop();
     let footerHeight = $('footer').height();
 
-    if( dHeight - footerHeight < (wHeight + winScrollTop)){
+    if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       $('.top_button').addClass('fixed')
     }else{
       $('.top_button').removeClass('fixed')
