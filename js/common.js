@@ -1,9 +1,9 @@
 $(function(){
   let dHeight = $(document).height();
-  let wHeight = $(window).innerHeight();
-  let winScrollTop = $(window).scrollTop();
+  // let wHeight = $(window).innerHeight();
+  // let winScrollTop = $(window).scrollTop();
   // let footerHeight = $('footer').outerHeight();
-  let footerHeight = $('footer').outerHeight();
+  // let footerHeight = $('footer').outerHeight();
 
   // 헤더 마우스 호버 시 노출
   $('header').mouseenter(()=>{
@@ -74,11 +74,13 @@ $(function(){
 
     // 탑 버튼
     // dHeight = $(document).height();
-    // let wHeight = $(window).innerHeight();
+    let wHeight = $(window).innerHeight();
     winScrollTop = $(window).scrollTop();
     // let footerHeight = $('footer').outerHeight();
+    let footerHeight = $('footer').offset().top;
 
-    if( dHeight - footerHeight <= (wHeight + winScrollTop)){
+    if( footerHeight <= (wHeight + winScrollTop)){
+    // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       $('.top_button').addClass('fixed')
     }else{
       $('.top_button').removeClass('fixed')
