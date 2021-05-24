@@ -1027,10 +1027,10 @@ footer{
   .br_after{
     display: block;
   }
-  .more_btn{
-    padding: 5px 25px;
-    font-size: 14px;
-  }
+  // .more_btn{
+  //   padding: 5px 25px;
+  //   font-size: 14px;
+  // }
   .deco_wrap{
     display: none;
   }
@@ -1356,11 +1356,11 @@ footer{
 }
 
 @media screen and ( max-width: 500px ){
-  .more_btn{
-    margin-top: 4vw;
-    font-size: 2.8vw;
-    padding: 1vw 5vw;
-  }
+  // .more_btn{
+  //   margin-top: 4vw;
+  //   font-size: 2.8vw;
+  //   padding: 1vw 5vw;
+  // }
   header{
     height: 12vw;
     .logo{
