@@ -1,6 +1,9 @@
 $(function(){
   let dHeight = $(document).height();
-
+  let wHeight = $(window).innerHeight();
+  let winScrollTop = $(window).scrollTop();
+  // let footerHeight = $('footer').outerHeight();
+  let footerHeight = $('footer').outerHeight();
 
   // 헤더 마우스 호버 시 노출
   $('header').mouseenter(()=>{
@@ -49,6 +52,11 @@ $(function(){
       // }
   }
 
+
+
+
+
+
   // 헤더 스크롤 위치에 따라 노출
   $(window).scroll(()=>{
 
@@ -65,10 +73,10 @@ $(function(){
 
 
     // 탑 버튼
-    dHeight = $(document).height();
-    let wHeight = $(window).innerHeight();
-    let winScrollTop = $(window).scrollTop();
-    let footerHeight = $('footer').outerHeight();
+    // dHeight = $(document).height();
+    // let wHeight = $(window).innerHeight();
+    winScrollTop = $(window).scrollTop();
+    // let footerHeight = $('footer').outerHeight();
 
     if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       $('.top_button').addClass('fixed')
