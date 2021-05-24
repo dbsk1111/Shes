@@ -954,7 +954,7 @@ footer .footer_bottom .sns a img {
   }
   section .inner .list_wrap li {
     flex: 0 35%;
-    width: 255px;
+    width: auto;
     margin-bottom: 25px;
   }
   section .inner .list_wrap li:not(:first-child) {
@@ -971,6 +971,9 @@ footer .footer_bottom .sns a img {
   }
   #signature .inner .section_img {
     height: auto;
+  }
+  #clinic.float_menu {
+    padding: 100px 0 140px;
   }
   #clinic.float_menu .inner {
     flex-direction: column-reverse;
