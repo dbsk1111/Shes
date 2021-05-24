@@ -35,13 +35,11 @@ $(function(){
     let addHeight = wHeight*1;
     let thisScrollTop = $(this).scrollTop();
     $(".ts").each(function(){
-      if( !$(this).hasClass == 'active' ){
-        let thisOffset = $(this).offset();
-        let thisHeight = $(this).height();
-        // if( (thisScrollTop - 170) < thisOffset.top && thisOffset.top < (thisScrollTop + 840 ) ){
-        if( (thisScrollTop + (wHeight * 0.75) ) >= thisOffset.top && (thisOffset.top + thisHeight - (wHeight * 0.45) ) > thisScrollTop ){
-          $(this).addClass("active");
-        }
+      let thisOffset = $(this).offset();
+      let thisHeight = $(this).height();
+      // if( (thisScrollTop - 170) < thisOffset.top && thisOffset.top < (thisScrollTop + 840 ) ){
+      if( (thisScrollTop + (wHeight * 0.75) ) >= thisOffset.top && (thisOffset.top + thisHeight - (wHeight * 0.45) ) > thisScrollTop ){
+        $(this).addClass("active");
       }
     })
       // let thisOffset = $("#clinic").offset();
@@ -54,6 +52,7 @@ $(function(){
   // 헤더 스크롤 위치에 따라 노출
   $(window).scroll(()=>{
 
+
     // ts 클래스 반응
     activeFunc();
 
@@ -63,6 +62,7 @@ $(function(){
     }else{
       $('header').removeClass('on')
     }
+
 
     // 탑 버튼
     let dHeight = $(document).height();
