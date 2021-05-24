@@ -58,7 +58,7 @@ a:hover{ color: $hover; }
   &:hover{
     color: $white;
     background: $primary;
-    border: 1px solid $primary;
+    border: 1px solid transparent;
   }
 }
 .inner{
@@ -1359,9 +1359,6 @@ footer{
     margin-top: 4vw;
     font-size: 2.8vw;
     padding: 1vw 5vw;
-    &:hover{
-      border: 1px solid $primary;
-    }
   }
   header{
     height: 12vw;
@@ -1520,7 +1517,7 @@ footer{
               right: -6vw;
               box-shadow: 1vw 1vw 2vw rgba(0,0,0,.1);
               &:before{
-                margin: -3.6 -.6vw 0 0;
+                margin: -3.6vw -.6vw 0 0;
                 top: 5.6vw;
                 right: 5.6vw;
                 font-size: 5.2vw;
