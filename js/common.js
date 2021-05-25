@@ -90,7 +90,8 @@ $(function(){
     let footerHeight = $('footer').offset().top;
 
     if( footerHeight <= (wHeight + winScrollTop)){
-      $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
+      $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight)+'px)')
+      // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       // $('.top_button_wrap').addClass('fixed')
       // $('.top_button_wrap').css('bottom',footerHeight)
