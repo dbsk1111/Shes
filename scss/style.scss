@@ -674,9 +674,9 @@ section{
 
 .top_button_wrap{
   position: fixed;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
   right: 20px;
-  bottom: 20px;
+  bottom: 0px;
   z-index: 5;
   &.fixed{
     position: absolute;
@@ -1588,9 +1588,9 @@ footer{
     }
   }
   .top_button_wrap{
-    // margin-bottom: 4vw;
+    margin-bottom: 4vw;
     right: 4vw;
-    bottom: 4vw;
+    // bottom: 4vw;
     a{
       display: block;
       width: 12vw;

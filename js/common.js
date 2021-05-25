@@ -99,9 +99,9 @@ $(function(){
 
     if( footerHeight <= (wHeight + winScrollTop)){
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
-      $('.top_button').addClass('fixed')
+      $('.top_button_wrap').addClass('fixed')
     }else{
-      $('.top_button').removeClass('fixed')
+      $('.top_button_wrap').removeClass('fixed')
     }
   })
 
