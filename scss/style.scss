@@ -689,10 +689,10 @@ section{
   &.fixed{
     position: absolute;
     bottom: 100%;
-    .schedule{
-      position: absolute;
-      transform: translate( 20px, 20px);
-    }
+    // .schedule{
+    //   position: absolute;
+    //   transform: translate( 20px, 20px);
+    // }
   }
   & > a{
     display: block;
@@ -701,6 +701,11 @@ section{
     border: 1px solid #905e58;
     width: 60px;
     box-sizing: border-box;
+    &.operating{
+      bottom: 100%;
+      position: absolute;
+      z-index: 5;
+    }
     &:not(:first-child){
       margin-top: 10px;
     }
@@ -723,15 +728,15 @@ section{
 .schedule{
   display: none;
   position: fixed;
-  padding: 20px;
+  padding: 20px 30px 20px 20px;
   width: 140px;
-  right: 51px;
+  right: 60px;
   bottom: 120px;
   text-align: left;
   color: #666;
   font-size: 16px;
   background: #fff;
-  z-index: 100;
+  z-index: 1;
   line-height: 1.77;
   & *{
     text-align: left;
@@ -747,20 +752,19 @@ section{
     height: 1px;
     background: #ddd;
   }
-  .operating{
-    display: block;
-    position: absolute;
-    bottom: -30px;
-    right: -31px;
-    width: 60px;
-    &:not(:first-child){
-      margin-top: 10px;
-    }
-    img{
-      display: block;
-      width: 100%;
-    }
-  }
+  // .operating{
+  //   display: block;
+  //   position: fixed;
+  //   border-radius: 100%;
+  //   background: #905e58;
+  //   border: 1px solid #905e58;
+  //   width: 60px;
+  //   box-sizing: border-box;
+  //   img{
+  //     display: block;
+  //     width: 100%;
+  //   }
+  // }
 }
 
 footer{
@@ -1653,13 +1657,28 @@ footer{
     a{
       display: block;
       width: 12vw;
-      &:not(:first-child){
-        margin-top: 2vw;
-      }
       img{
         display: block;
         width: 100%;
       }
+    }
+  }
+  .schedule{
+    padding: 4vw 6vw 4vw 4vw;
+    width: 28vw;
+    right: 12vw;
+    bottom: 24vw;
+    font-size: 3.2vw;
+    & *{
+      font-size: 3.2vw;
+    }
+    .separation{
+      margin: 4vw 0;
+    }
+    .operating{
+      bottom: -3vw;
+      right: -6.2vw;
+      width: 12vw;
     }
   }
   footer{

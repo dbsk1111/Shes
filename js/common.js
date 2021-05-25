@@ -34,8 +34,6 @@ $(function(){
     }
   })
 
-
-
   // ts 클래스 반응
   activeFunc();
   function activeFunc(){
@@ -59,7 +57,7 @@ $(function(){
       $('#gnb').css('display','none')
     }
 
-    // 슬라이더 너비
+    // 슬라이더 너비 고정
     $('.slider_01, .slider_02, .slider_03, .slider_04').css('width','100%')
   })
 
@@ -96,20 +94,25 @@ $(function(){
     // let footerHeight = $('footer').outerHeight();
     let footerHeight = $('footer').offset().top;
 
-
     if( footerHeight <= (wHeight + winScrollTop)){
       // $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 20)+'px)')
       // $('#test').css('top',footerHeight)
       // $('.top_button_wrap').css('top', footerHeight)
       // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
+      if( $(window).width() < 500 ){
+        $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 )/2 +'vw)')
+      }else{
+        $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 ) +'px)')
+      }
       $('.top_button_wrap').addClass('fixed')
+
       // $('.top_button_wrap').css('bottom',footerHeight)
     }else{
       // $('.top_button_wrap').css('top',(wHeight + winScrollTop))
+      $('.schedule').css('transform', 'translateY(0)')
       $('.top_button_wrap').removeClass('fixed')
     }
-
 
     // $('#test').css('top',((wHeight + winScrollTop) - footerHeight)).css('bottom',0)
 
@@ -119,10 +122,14 @@ $(function(){
   $('a.operating, .screen_black').click(function(){
     if( !$('a.operating').hasClass('on') ){
       $('a.operating').addClass('on')
-      $('.screen_black, .schedule').css('display','block')
+      $('a.operating img').attr('src','./img/button_fix_close.png')
+      // $('.screen_black, .schedule').css('display','block')
+      $('.screen_black, .schedule').fadeIn();
     }else{
       $('a.operating').removeClass('on')
-      $('.screen_black, .schedule').css('display','none')
+      $('a.operating img').attr('src','./img/button_time.png')
+      // $('.screen_black, .schedule').css('display','none')
+      $('.screen_black, .schedule').fadeOut();
     }
     return false;
   })
