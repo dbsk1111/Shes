@@ -89,8 +89,10 @@ $(function(){
     // let footerHeight = $('footer').outerHeight();
     let footerHeight = $('footer').offset().top;
 
+    $('#test').css('top',wHeight + winScrollTop)
     if( footerHeight <= (wHeight + winScrollTop)){
       $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight)+'px)')
+      $('#test').css('top',footerHeight)
       // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       // $('.top_button_wrap').addClass('fixed')
@@ -99,7 +101,7 @@ $(function(){
       // $('.top_button_wrap').removeClass('fixed')
     }
 
-    $('#test').css('top',footerHeight)
+
     // $('#test').css('top',((wHeight + winScrollTop) - footerHeight)).css('bottom',0)
 
   })
