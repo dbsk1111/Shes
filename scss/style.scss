@@ -682,7 +682,7 @@ section{
     position: absolute;
     bottom: 100%;
   }
-  a{
+  & > a{
     display: block;
     width: 60px;
     &:not(:first-child){
@@ -710,11 +710,23 @@ section{
   padding: 20px;
   right: 51px;
   bottom: 120px;
+  text-align: left;
   color: #666;
+  font-size: 16px;
   background: #fff;
   z-index: 100;
+  & *{
+    text-align: left;
+    font-size: 16px;
+  }
   p{
     color: #333;
+  }
+  .separation{
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
   }
 }
 

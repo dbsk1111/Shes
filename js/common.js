@@ -22,6 +22,7 @@ $(function(){
     $('html,body').animate({scrollTop : offsetElem.top},400);
   })
 
+  // 모바일 버튼 클릭 / 메뉴 호출
   $('#gnb_btn').click(function(){
     // $('#gnb').slideup();
     if( $('#gnb').css('display') == 'none' ){
@@ -33,19 +34,7 @@ $(function(){
     }
   })
 
-  // 운영 시간
-  $('.operating').click(function(){
-    if( !$(this).hasClass('on') ){
-      $(this).addClass('on')
-      $(this).find('img').attr('src','./img/button_fix_close.png')
-      $('.screen_black').css('display','block')
-    }else{
-      $(this).removeClass('on')
-      $(this).find('img').attr('src','./img/button_time.png')
-      $('.screen_black').css('display','none')
-    }
-    return false;
-  })
+
 
   // ts 클래스 반응
   activeFunc();
@@ -87,7 +76,7 @@ $(function(){
     // ts 클래스 반응
     activeFunc();
 
-    // 헤더
+    // 헤더 색 변화
     if( $(window).scrollTop() != 0 ){
       $('header').addClass('on')
     }else{
@@ -106,6 +95,24 @@ $(function(){
     }else{
       $('.top_button_wrap').removeClass('fixed')
     }
+
+    // 운영 시간표 위치 고정
+    // if( )
+
+  })
+
+  // 운영 시간
+  $('.operating').click(function(){
+    if( !$(this).hasClass('on') ){
+      $(this).addClass('on')
+      $(this).find('img').attr('src','./img/button_fix_close.png')
+      $('.screen_black').css('display','block')
+    }else{
+      $(this).removeClass('on')
+      $(this).find('img').attr('src','./img/button_time.png')
+      $('.screen_black').css('display','none')
+    }
+    return false;
   })
 
   // 말줄임표 처리
