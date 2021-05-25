@@ -256,27 +256,27 @@ header.on #gnb li a:hover, header:hover #gnb li a:hover {
 .deco_wrap img {
   position: absolute;
   display: block;
-  z-index: 10;
+  z-index: 5;
 }
 
 .deco_wrap .deco1 {
-  top: -120px;
-  right: 2vw;
+  top: -470px;
+  right: 10vw;
 }
 
 .deco_wrap .deco2 {
   top: 100px;
-  left: 25vw;
+  left: 21vw;
 }
 
 .deco_wrap .deco3 {
   top: 35vw;
-  right: 30vw;
+  right: 17vw;
 }
 
 .deco_wrap .deco4 {
   top: 550px;
-  right: 20vw;
+  right: 40vw;
 }
 
 #home {
@@ -423,6 +423,7 @@ section .inner .list_wrap {
 section .inner .list_wrap li {
   float: left;
   position: relative;
+  text-align: left;
   width: 278px;
 }
 
@@ -432,6 +433,9 @@ section .inner .list_wrap li:not(:first-child) {
 
 section .inner .list_wrap li a {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 section .inner .list_wrap li a img {
@@ -553,7 +557,6 @@ section .inner .list_wrap li a div p + p {
   display: block;
   position: relative;
   width: 250px;
-  background: red;
 }
 
 #clinic .inner .list_wrap .section_list:not(:first-child) {
@@ -740,6 +743,7 @@ section .inner .list_wrap li a div p + p {
 
 .top_button_wrap.fixed .schedule {
   position: absolute;
+  transform: translate(20px, 20px);
 }
 
 .top_button_wrap > a {
@@ -767,10 +771,10 @@ section .inner .list_wrap li a div p + p {
 }
 
 .schedule {
-  display: inline-block;
+  display: none;
   position: fixed;
   padding: 20px;
-  min-width: 130px;
+  width: 140px;
   right: 51px;
   bottom: 120px;
   text-align: left;
@@ -796,6 +800,23 @@ section .inner .list_wrap li a div p + p {
   width: 100%;
   height: 1px;
   background: #ddd;
+}
+
+.schedule .operating {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  right: -31px;
+  width: 60px;
+}
+
+.schedule .operating:not(:first-child) {
+  margin-top: 10px;
+}
+
+.schedule .operating img {
+  display: block;
+  width: 100%;
 }
 
 footer {
@@ -1004,8 +1025,7 @@ footer .footer_bottom .sns a img {
     justify-content: space-evenly;
   }
   section .inner .list_wrap li {
-    flex: 0 35%;
-    width: auto;
+    flex: 0 40%;
     margin-bottom: 25px;
   }
   section .inner .list_wrap li:not(:first-child) {
@@ -1060,9 +1080,8 @@ footer .footer_bottom .sns a img {
     height: 550px;
   }
   #editoressey .essey_bxslider .essey_text {
+    right: 12%;
     width: 500px;
-    padding: 60px 40px;
-    right: 0;
   }
   #editoressey .essey_bxslider .essey_text .essey_title {
     margin-top: 35px;

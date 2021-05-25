@@ -34,6 +34,6 @@ $(document).ready(function(){
     // 자동
     auto: true,
     pause:4000,
-    autoHover:true,
+    // autoHover:true,
   })
 });

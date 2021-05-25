@@ -65,9 +65,9 @@ $(function(){
 
     // 데코레이션 움직임
     let deco1Height = winScrollTop*0.5;
-    let deco2Height = winScrollTop*0.3;
-    let deco3Height = winScrollTop*0.7;
-    let deco4Height = winScrollTop*0.2;
+    let deco2Height = winScrollTop*0.2;
+    let deco3Height = winScrollTop*0.8;
+    let deco4Height = winScrollTop*0.3;
     $('.deco1').css('transform', 'translateY(-'+deco1Height+'px)');
     $('.deco2').css('transform', 'translateY(-'+deco2Height+'px)');
     $('.deco3').css('transform', 'translateY(-'+deco3Height+'px)');
@@ -90,27 +90,24 @@ $(function(){
     let footerHeight = $('footer').offset().top;
 
     if( footerHeight <= (wHeight + winScrollTop)){
+      $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
-      $('.top_button_wrap').addClass('fixed')
+      // $('.top_button_wrap').addClass('fixed')
+      // $('.top_button_wrap').css('bottom',footerHeight)
     }else{
-      $('.top_button_wrap').removeClass('fixed')
+      // $('.top_button_wrap').removeClass('fixed')
     }
-
-    // 운영 시간표 위치 고정
-    // if( )
 
   })
 
   // 운영 시간
-  $('.operating').click(function(){
-    if( !$(this).hasClass('on') ){
-      $(this).addClass('on')
-      $(this).find('img').attr('src','./img/button_fix_close.png')
-      $('.screen_black').css('display','block')
+  $('a.operating, .screen_black').click(function(){
+    if( !$('a.operating').hasClass('on') ){
+      $('a.operating').addClass('on')
+      $('.screen_black, .schedule').css('display','block')
     }else{
-      $(this).removeClass('on')
-      $(this).find('img').attr('src','./img/button_time.png')
-      $('.screen_black').css('display','none')
+      $('a.operating').removeClass('on')
+      $('.screen_black, .schedule').css('display','none')
     }
     return false;
   })

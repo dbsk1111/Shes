@@ -229,23 +229,23 @@ header{
   img{
     position: absolute;
     display: block;
-    z-index: 10;
+    z-index: 5;
   }
   .deco1{
-    top: -120px;
-    right: 2vw;
+    top: -470px;
+    right: 10vw;
   }
   .deco2{
     top: 100px;
-    left: 25vw;
+    left: 21vw;
   }
   .deco3{
     top: 35vw;
-    right: 30vw;
+    right: 17vw;
   }
   .deco4{
     top: 550px;
-    right: 20vw;
+    right: 40vw;
   }
 }
 #home{
@@ -376,7 +376,6 @@ section{
         font-weight: normal;
         line-height: 1.5;
         margin-bottom: 20px;
-
       }
       h3 + p{
         margin-bottom: 40px;
@@ -393,6 +392,7 @@ section{
       li{
         float: left;
         position: relative;
+        text-align: left;
         // 3개일 때
         // width: 355px;
         width: 278px;
@@ -402,6 +402,9 @@ section{
         }
         a{
           display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
           img{
             display: block;
             width: 100%;
@@ -518,7 +521,6 @@ section{
         display: block;
         position: relative;
         width: 250px;
-        background: red;
         &:not(:first-child){
           margin-left: 60px;
         }
@@ -683,7 +685,7 @@ section{
     bottom: 100%;
     .schedule{
       position: absolute;
-
+      transform: translate( 20px, 20px);
     }
   }
   & > a{
@@ -709,10 +711,10 @@ section{
   background: rgba(0,0,0,.6);
 }
 .schedule{
-  display: inline-block;
+  display: none;
   position: fixed;
   padding: 20px;
-  min-width: 130px;
+  width: 140px;
   right: 51px;
   bottom: 120px;
   text-align: left;
@@ -734,6 +736,20 @@ section{
     width: 100%;
     height: 1px;
     background: #ddd;
+  }
+  .operating{
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    right: -31px;
+    width: 60px;
+    &:not(:first-child){
+      margin-top: 10px;
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
   }
 }
 
@@ -933,8 +949,8 @@ footer{
           justify-content: space-evenly;
         }
         li{
-          flex: 0 35%;
-          width: auto;
+          flex: 0 40%;
+          // width: auto;
           margin-bottom: 25px;
           &:not(:first-child){
             margin-left: 0px;
@@ -1007,9 +1023,10 @@ footer{
         height: 550px;
       }
       .essey_text{
+        right: 12%;
         width: 500px;
-        padding: 60px 40px;
-        right: 0;
+        // padding: 60px 40px;
+        // right: 0;
         .essey_title{
           margin-top: 35px;
           font-size: 25px;
