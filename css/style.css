@@ -275,7 +275,7 @@ header.on #gnb li a:hover, header:hover #gnb li a:hover {
 }
 
 .deco_wrap .deco4 {
-  top: 700px;
+  top: 900px;
   left: 32vw;
 }
 
@@ -451,6 +451,7 @@ section .inner .list_wrap li a div p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 500;
@@ -1470,6 +1471,7 @@ footer .footer_bottom .sns a img {
     margin-bottom: 0px;
   }
   section .inner .list_wrap li {
+    width: 55.6vw;
     margin-bottom: 5vw;
   }
   section .inner .list_wrap li a div {
