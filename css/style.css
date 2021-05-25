@@ -752,7 +752,7 @@ section .inner .list_wrap li a div p + p {
   width: 100%;
 }
 
-.top_button_wrap .screen_black {
+.screen_black {
   position: fixed;
   display: none;
   top: 0;
@@ -760,6 +760,21 @@ section .inner .list_wrap li a div p + p {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
+}
+
+.schedule {
+  display: inline-block;
+  position: fixed;
+  padding: 20px;
+  right: 51px;
+  bottom: 120px;
+  color: #666;
+  background: #fff;
+  z-index: 100;
+}
+
+.schedule p {
+  color: #333;
 }
 
 footer {

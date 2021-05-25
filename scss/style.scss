@@ -693,15 +693,28 @@ section{
       width: 100%;
     }
   }
-  .screen_black{
-    position: fixed;
-    display: none;
-    // display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,.6);
+}
+
+.screen_black{
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+}
+.schedule{
+  display: inline-block;
+  position: fixed;
+  padding: 20px;
+  right: 51px;
+  bottom: 120px;
+  color: #666;
+  background: #fff;
+  z-index: 100;
+  p{
+    color: #333;
   }
 }
 

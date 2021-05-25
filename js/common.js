@@ -33,13 +33,16 @@ $(function(){
     }
   })
 
+  // 운영 시간
   $('.operating').click(function(){
     if( !$(this).hasClass('on') ){
       $(this).addClass('on')
       $(this).find('img').attr('src','./img/button_fix_close.png')
+      $('.screen_black').css('display','block')
     }else{
       $(this).removeClass('on')
       $(this).find('img').attr('src','./img/button_time.png')
+      $('.screen_black').css('display','none')
     }
     return false;
   })
