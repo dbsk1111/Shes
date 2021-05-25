@@ -23,10 +23,10 @@ $(function(){
   $('#gnb_btn').click(function(){
     // $('#gnb').slideup();
     if( $('#gnb').css('display') == 'none' ){
-      $('header').addClass('on')
+      $('header, #gnb_btn').addClass('on')
       $('#gnb').slideDown(400)
     }else{
-      $('header').removeClass('on')
+      $('header, #gnb_btn').removeClass('on')
       $('#gnb').slideUp(400)
     }
   })
@@ -52,9 +52,12 @@ $(function(){
       // }
   }
 
-
-
-
+  // 화면 커졌을 때 gnb 노출
+  $(window).resize(()=>{
+    if( $(this).innerWidth >= 768 ){
+      $('#gnb').css('display','block')
+    }
+  })
 
 
   // 헤더 스크롤 위치에 따라 노출
@@ -70,7 +73,6 @@ $(function(){
     }else{
       $('header').removeClass('on')
     }
-
 
     // 탑 버튼
     // dHeight = $(document).height();
