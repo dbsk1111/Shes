@@ -9,7 +9,7 @@ $(function(){
   $('header').mouseenter(function(){
     $(this).addClass('on')
   }).mouseleave(function(){
-    if( $(window).width() > 768 && $(window).scrollTop() == 0 ){
+    if( $(window).scrollTop() == 0 ){
       $(this).removeClass('on')
     }
   })
@@ -34,14 +34,12 @@ $(function(){
   })
 
   $('.operating').click(function(){
-    console.log(123)
-    if( !$(this).hasClass == 'on' ){
+    if( !$(this).hasClass('on') ){
       $(this).addClass('on')
-      $(this).find('img').css('background-image','./img/button_fix_close.png')
-
-
+      $(this).find('img').attr('src','./img/button_fix_close.png')
     }else{
-      $(this).css('background-image','./img/button_time.png')
+      $(this).removeClass('on')
+      $(this).find('img').attr('src','./img/button_time.png')
     }
     return false;
   })
