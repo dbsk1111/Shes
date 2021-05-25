@@ -615,7 +615,7 @@ section .inner .list_wrap li a div p + p {
   overflow: hidden;
   position: absolute;
   top: 40px;
-  right: 10vw;
+  right: 2%;
   width: 590px;
   padding: 80px 60px;
   background: #fff;
@@ -1026,6 +1026,7 @@ footer .footer_bottom .sns a img {
   #editoressey .essey_bxslider .essey_text {
     width: 500px;
     padding: 60px 40px;
+    right: 0;
   }
   #editoressey .essey_bxslider .essey_text .essey_title {
     margin-top: 35px;
@@ -1309,6 +1310,9 @@ footer .footer_bottom .sns a img {
   }
   footer .footer_bottom .sns {
     margin-top: 10px;
+  }
+  .inner {
+    padding: 0 20px;
   }
 }
 

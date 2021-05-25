@@ -571,7 +571,7 @@ section{
       overflow: hidden;
       position: absolute;
       top: 40px;
-      right: 10vw;
+      right: 2%;
       width: 590px;
       padding: 80px 60px;
       background: #fff;
@@ -977,6 +977,7 @@ footer{
       .essey_text{
         width: 500px;
         padding: 60px 40px;
+        right: 0;
         .essey_title{
           margin-top: 35px;
           font-size: 25px;
@@ -1369,6 +1370,9 @@ footer{
         margin-top: 10px;
       }
     }
+  }
+  .inner{
+    padding: 0 20px;
   }
 }
 
