@@ -681,6 +681,10 @@ section{
   &.fixed{
     position: absolute;
     bottom: 100%;
+    .schedule{
+      position: absolute;
+
+    }
   }
   & > a{
     display: block;
@@ -708,6 +712,7 @@ section{
   display: inline-block;
   position: fixed;
   padding: 20px;
+  min-width: 130px;
   right: 51px;
   bottom: 120px;
   text-align: left;
@@ -715,9 +720,11 @@ section{
   font-size: 16px;
   background: #fff;
   z-index: 100;
+  line-height: 1.77;
   & *{
     text-align: left;
     font-size: 16px;
+    line-height: 1.77;
   }
   p{
     color: #333;

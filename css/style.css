@@ -738,6 +738,10 @@ section .inner .list_wrap li a div p + p {
   bottom: 100%;
 }
 
+.top_button_wrap.fixed .schedule {
+  position: absolute;
+}
+
 .top_button_wrap > a {
   display: block;
   width: 60px;
@@ -766,6 +770,7 @@ section .inner .list_wrap li a div p + p {
   display: inline-block;
   position: fixed;
   padding: 20px;
+  min-width: 130px;
   right: 51px;
   bottom: 120px;
   text-align: left;
@@ -773,11 +778,13 @@ section .inner .list_wrap li a div p + p {
   font-size: 16px;
   background: #fff;
   z-index: 100;
+  line-height: 1.77;
 }
 
 .schedule * {
   text-align: left;
   font-size: 16px;
+  line-height: 1.77;
 }
 
 .schedule p {
