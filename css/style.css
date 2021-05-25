@@ -615,7 +615,7 @@ section .inner .list_wrap li a div p + p {
   overflow: hidden;
   position: absolute;
   top: 40px;
-  right: 40px;
+  right: 10vw;
   width: 590px;
   padding: 80px 60px;
   background: #fff;
@@ -1024,7 +1024,7 @@ footer .footer_bottom .sns a img {
     height: 550px;
   }
   #editoressey .essey_bxslider .essey_text {
-    width: 450px;
+    width: 500px;
     padding: 60px 40px;
   }
   #editoressey .essey_bxslider .essey_text .essey_title {
