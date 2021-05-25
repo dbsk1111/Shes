@@ -739,9 +739,10 @@ section .inner .list_wrap li a div p + p {
 }
 
 .top_button_wrap {
-  position: absolute;
+  position: fixed;
   right: 20px;
-  transform: translateY(calc( -100% - 20px));
+  bottom: 0px;
+  transform: translateY(-20px);
   z-index: 5;
 }
 

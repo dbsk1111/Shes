@@ -686,11 +686,13 @@ section{
 }
 
 .top_button_wrap{
-  position: absolute;
+  // position: absolute;
   // margin-bottom: 20px;
+  position: fixed;
   right: 20px;
-  // bottom: 0px;
-  transform: translateY( calc( -100% - 20px ) );
+  bottom: 0px;
+  transform: translateY( - 20px );
+  // transform: translateY( calc( -100% - 20px ) );
   z-index: 5;
   &.fixed{
     position: absolute;
