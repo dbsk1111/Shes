@@ -62,9 +62,11 @@ $(function(){
     let deco1Height = winScrollTop*0.5;
     let deco2Height = winScrollTop*0.3;
     let deco3Height = winScrollTop*0.7;
+    let deco4Height = winScrollTop*0.2;
     $('.deco1').css('transform', 'translateY(-'+deco1Height+'px)');
     $('.deco2').css('transform', 'translateY(-'+deco2Height+'px)');
     $('.deco3').css('transform', 'translateY(-'+deco3Height+'px)');
+    $('.deco4').css('transform', 'translateY(-'+deco4Height+'px)');
 
     // ts 클래스 반응
     activeFunc();
