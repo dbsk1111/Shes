@@ -6,16 +6,6 @@
   word-break: keep-all;
 }
 
-#test {
-  bottom: 0;
-  width: 200px;
-  position: absolute;
-  background: gold;
-  z-index: 1;
-  height: 200px;
-  transform: translateY(-100%);
-}
-
 body {
   overflow-x: hidden;
 }
@@ -270,23 +260,23 @@ header.on #gnb li a:hover, header:hover #gnb li a:hover {
 }
 
 .deco_wrap .deco1 {
-  top: -470px;
+  top: -100px;
   right: 10vw;
 }
 
 .deco_wrap .deco2 {
-  top: 100px;
+  top: 160px;
   left: 21vw;
 }
 
 .deco_wrap .deco3 {
-  top: 35vw;
-  right: 17vw;
+  top: 850px;
+  right: 20vw;
 }
 
 .deco_wrap .deco4 {
-  top: 550px;
-  right: 40vw;
+  top: 700px;
+  left: 32vw;
 }
 
 #home {
@@ -739,10 +729,10 @@ section .inner .list_wrap li a div p + p {
 }
 
 .top_button_wrap {
+  margin-bottom: 20px;
   position: fixed;
   right: 20px;
   bottom: 0px;
-  transform: translateY(-20px);
   z-index: 5;
 }
 
@@ -1094,7 +1084,7 @@ footer .footer_bottom .sns a img {
     height: 550px;
   }
   #editoressey .essey_bxslider .essey_text {
-    right: 12%;
+    right: 4%;
     width: 500px;
   }
   #editoressey .essey_bxslider .essey_text .essey_title {
@@ -1429,19 +1419,21 @@ footer .footer_bottom .sns a img {
     top: 50%;
     left: 50%;
     width: 4vw;
-    height: 3.2vw;
+    height: 4vw;
   }
   header #gnb_btn span {
     height: 0.4vw;
   }
   header #gnb_btn span:nth-of-type(1) {
+    top: 0.4vw;
     width: 3.2vw;
   }
   header #gnb_btn span:nth-of-type(2) {
-    top: 1.4vw;
+    top: 1.8vw;
     width: 4vw;
   }
   header #gnb_btn span:nth-of-type(3) {
+    bottom: 0.4vw;
     width: 3.2vw;
   }
   #home .bx-controls .bx-pager {
@@ -1554,7 +1546,6 @@ footer .footer_bottom .sns a img {
     top: 2.8vw;
   }
   .top_button_wrap {
-    margin-bottom: 4vw;
     right: 4vw;
   }
   .top_button_wrap a {

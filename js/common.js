@@ -53,10 +53,13 @@ $(function(){
 
   // 화면 커졌을 때 gnb 노출
   $(window).resize(function(){
-    if( $(this).innerWidth >= 768 ){
+    if( $(this).innerWidth() > 768 ){
       $('#gnb').css('display','block')
+    }else{
+      $('#gnb').css('display','none')
     }
 
+    // 슬라이더 너비
     $('.slider_01, .slider_02, .slider_03, .slider_04').css('width','100%')
   })
 
@@ -89,22 +92,22 @@ $(function(){
 
     // 탑 버튼
     // dHeight = $(document).height();
-    wHeight = $(window).innerHeight();
+    // wHeight = $(window).innerHeight();
     // let footerHeight = $('footer').outerHeight();
     let footerHeight = $('footer').offset().top;
 
 
     if( footerHeight <= (wHeight + winScrollTop)){
-      $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 20)+'px)')
+      // $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 20)+'px)')
       // $('#test').css('top',footerHeight)
       // $('.top_button_wrap').css('top', footerHeight)
       // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
-      // $('.top_button_wrap').addClass('fixed')
+      $('.top_button_wrap').addClass('fixed')
       // $('.top_button_wrap').css('bottom',footerHeight)
     }else{
       // $('.top_button_wrap').css('top',(wHeight + winScrollTop))
-      // $('.top_button_wrap').removeClass('fixed')
+      $('.top_button_wrap').removeClass('fixed')
     }
 
 
