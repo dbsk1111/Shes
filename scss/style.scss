@@ -699,7 +699,7 @@ section{
     display: block;
     border-radius: 100%;
     background: #905e58;
-    border: 1px solid #905e58;
+    border: 1px solid transparent;
     width: 60px;
     box-sizing: border-box;
     &.operating{
