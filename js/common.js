@@ -9,11 +9,13 @@ $(function(){
   $('header').mouseenter(function(){
     $(this).addClass('on')
   }).mouseleave(function(){
-    $(this).removeClass('on')
+    if( $(window).width() > 768 && $(window).scrollTop() == 0 ){
+      $(this).removeClass('on')
+    }
   })
 
   // 버튼 눌러서 섹션 이동
-  $('header a, .top_button a').click(function(){
+  $('header a, .back_to_top').click(function(){
     let thisElem = $(this.hash);
     let offsetElem = thisElem.offset();
     $('html,body').stop();
@@ -26,9 +28,22 @@ $(function(){
       $('header, #gnb_btn').addClass('on')
       $('#gnb').slideDown(400)
     }else{
-      $('header, #gnb_btn').removeClass('on')
+      $('#gnb_btn').removeClass('on')
       $('#gnb').slideUp(400)
     }
+  })
+
+  $('.operating').click(function(){
+    console.log(123)
+    if( !$(this).hasClass == 'on' ){
+      $(this).addClass('on')
+      $(this).find('img').css('background-image','./img/button_fix_close.png')
+
+
+    }else{
+      $(this).css('background-image','./img/button_time.png')
+    }
+    return false;
   })
 
   // ts 클래스 반응

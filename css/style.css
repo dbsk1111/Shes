@@ -725,34 +725,33 @@ section .inner .list_wrap li a div p + p {
   background: #f3f3f9;
 }
 
-.top_button {
+.top_button_wrap {
   position: fixed;
-  margin-bottom: 20px;
   right: 20px;
-  bottom: 0;
+  bottom: 20px;
   z-index: 5;
 }
 
-.top_button.fixed {
+.top_button_wrap.fixed {
   position: absolute;
   bottom: 100%;
 }
 
-.top_button a {
+.top_button_wrap a {
   display: block;
   width: 60px;
 }
 
-.top_button a:not(:first-child) {
+.top_button_wrap a:not(:first-child) {
   margin-top: 10px;
 }
 
-.top_button a img {
+.top_button_wrap a img {
   display: block;
   width: 100%;
 }
 
-.top_button .screen_black {
+.top_button_wrap .screen_black {
   position: fixed;
   display: none;
   top: 0;
@@ -1101,6 +1100,9 @@ footer .footer_bottom .sns a img {
   }
   header {
     height: 60px;
+  }
+  header .logo {
+    top: 0;
   }
   header #gnb_btn {
     display: block;
@@ -1481,18 +1483,18 @@ footer .footer_bottom .sns a img {
   #editoressey .bx-wrapper .bx-pager .bx-pager-link:before {
     top: 2.8vw;
   }
-  .top_button {
-    margin-bottom: 4vw;
+  .top_button_wrap {
     right: 4vw;
+    bottom: 4vw;
   }
-  .top_button a {
+  .top_button_wrap a {
     display: block;
     width: 12vw;
   }
-  .top_button a:not(:first-child) {
+  .top_button_wrap a:not(:first-child) {
     margin-top: 2vw;
   }
-  .top_button a img {
+  .top_button_wrap a img {
     display: block;
     width: 100%;
   }
