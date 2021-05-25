@@ -19,7 +19,7 @@ $hover: #e99691;
   width: 200px;
   position: absolute;
   // position: fixed;
-  background: green;
+  background: gold;
   z-index: 1;
   height: 200px;
   transform: translateY( -100% );
@@ -568,6 +568,10 @@ section{
       height: 590px;
       background: no-repeat center / cover;
     }
+    // .slider_01, .slider_02, .slider_03, .slider_04{
+    //   width: 100%;
+    //   position: relative;
+    // }
     .slider_01 .essey_img{
       background-image: url('../img/essay_01.jpg');
     }

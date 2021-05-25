@@ -23,7 +23,7 @@ $(document).ready(function(){
     mode: 'fade',
     speed: 400,
     randomStart: true,
-    responsive: false,
+    responsive: true,
 
     // 호출기
     pager: true,

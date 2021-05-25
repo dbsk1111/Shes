@@ -56,6 +56,8 @@ $(function(){
     if( $(this).innerWidth >= 768 ){
       $('#gnb').css('display','block')
     }
+
+    $('.slider_01, .slider_02, .slider_03, .slider_04').css('width','100%')
   })
 
   // 탑 버튼 초기화
