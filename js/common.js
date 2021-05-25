@@ -1,6 +1,6 @@
 $(function(){
   let dHeight = $(document).height();
-  // let wHeight = $(window).innerHeight();
+  let wHeight = $(window).innerHeight();
   let winScrollTop = $(window).scrollTop();
   // let footerHeight = $('footer').outerHeight();
   // let footerHeight = $('footer').outerHeight();
@@ -58,6 +58,8 @@ $(function(){
     }
   })
 
+  // 탑 버튼 초기화
+  $('.top_button_wrap').css('top',(wHeight + winScrollTop))
 
   // 헤더 스크롤 위치에 따라 노출
   $(window).scroll(function(){
@@ -85,19 +87,21 @@ $(function(){
 
     // 탑 버튼
     // dHeight = $(document).height();
-    let wHeight = $(window).innerHeight();
+    wHeight = $(window).innerHeight();
     // let footerHeight = $('footer').outerHeight();
     let footerHeight = $('footer').offset().top;
 
-    $('#test').css('top',wHeight + winScrollTop)
+
     if( footerHeight <= (wHeight + winScrollTop)){
-      $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight)+'px)')
+      // $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight)+'px)')
       $('#test').css('top',footerHeight)
+      $('.top_button_wrap').css('top', footerHeight)
       // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       // $('.top_button_wrap').addClass('fixed')
       // $('.top_button_wrap').css('bottom',footerHeight)
     }else{
+      $('.top_button_wrap').css('top',(wHeight + winScrollTop))
       // $('.top_button_wrap').removeClass('fixed')
     }
 

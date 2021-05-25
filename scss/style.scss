@@ -19,7 +19,7 @@ $hover: #e99691;
   width: 200px;
   position: absolute;
   // position: fixed;
-  background: blue;
+  background: green;
   z-index: 1;
   height: 200px;
   transform: translateY( -100% );
@@ -686,10 +686,11 @@ section{
 }
 
 .top_button_wrap{
-  position: fixed;
-  margin-bottom: 20px;
+  position: absolute;
+  // margin-bottom: 20px;
   right: 20px;
-  bottom: 0px;
+  // bottom: 0px;
+  transform: translateY( calc( -100% - 20px ) );
   z-index: 5;
   &.fixed{
     position: absolute;
