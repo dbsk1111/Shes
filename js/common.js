@@ -98,6 +98,9 @@ $(function(){
       // $('.top_button_wrap').removeClass('fixed')
     }
 
+    $('#test').css('top',footerHeight)
+    // $('#test').css('top',((wHeight + winScrollTop) - footerHeight)).css('bottom',0)
+
   })
 
   // 운영 시간

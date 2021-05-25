@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap');
 
-
+$light: #e99691;
 $primary: #b36960;
 $white: #fff;
 $baseColor: #333;
@@ -12,6 +12,15 @@ $hover: #e99691;
   color: $baseColor;
   text-transform: capitalize;
   word-break: keep-all;
+}
+
+#test{
+  width: 200px;
+  position: absolute;
+  // position: fixed;
+  background: yellowgreen;
+  z-index: 1;
+  height: 200px;
 }
 
 body{
@@ -601,7 +610,7 @@ section{
       .more_txt{
         float: right;
         margin-top: 30px;
-        color: #e99691
+        color: $light;
       }
     }
   }
@@ -690,7 +699,11 @@ section{
   }
   & > a{
     display: block;
+    border-radius: 100%;
+    background: #905e58;
+    border: 1px solid #905e58;
     width: 60px;
+    box-sizing: border-box;
     &:not(:first-child){
       margin-top: 10px;
     }

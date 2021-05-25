@@ -23,7 +23,7 @@ $(document).ready(function(){
     mode: 'fade',
     speed: 400,
     randomStart: true,
-    responsive: true,
+    responsive: false,
 
     // 호출기
     pager: true,
@@ -34,6 +34,6 @@ $(document).ready(function(){
     // 자동
     auto: true,
     pause:4000,
-    // autoHover:true,
+    autoHover:true,
   })
 });

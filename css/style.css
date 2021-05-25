@@ -6,6 +6,14 @@
   word-break: keep-all;
 }
 
+#test {
+  width: 200px;
+  position: absolute;
+  background: yellowgreen;
+  z-index: 1;
+  height: 200px;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -748,7 +756,11 @@ section .inner .list_wrap li a div p + p {
 
 .top_button_wrap > a {
   display: block;
+  border-radius: 100%;
+  background: #905e58;
+  border: 1px solid #905e58;
   width: 60px;
+  box-sizing: border-box;
 }
 
 .top_button_wrap > a:not(:first-child) {
