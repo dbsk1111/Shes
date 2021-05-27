@@ -95,10 +95,10 @@ $(function(){
     let footerHeight = $('footer').offset().top;
 
     if( footerHeight <= (wHeight + winScrollTop) ){
-      // $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 0)+'px)')
+      $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 0)+'px)')
       // $('#test').css('top',footerHeight)
       // $('.top_button_wrap').css('top', footerHeight)
-      $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
+      // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
     // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
       // if( $(window).width() < 500 ){
         // $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 )/2 +'vw)')
