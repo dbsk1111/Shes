@@ -94,7 +94,7 @@ $(function(){
     // let footerHeight = $('footer').outerHeight();
     let footerHeight = $('footer').offset().top;
 
-    if( footerHeight <= (wHeight + winScrollTop)){
+    if( footerHeight <= (wHeight + winScrollTop) - 20){
       $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 0)+'px)')
       // $('#test').css('top',footerHeight)
       // $('.top_button_wrap').css('top', footerHeight)
