@@ -730,10 +730,16 @@ section .inner .list_wrap li a div p + p {
 }
 
 .top_button_wrap {
-  position: absolute;
   margin-bottom: 20px;
+  position: fixed;
   right: 20px;
+  bottom: 0px;
   z-index: 5;
+}
+
+.top_button_wrap.fixed {
+  position: absolute;
+  bottom: 100%;
 }
 
 .top_button_wrap > a {

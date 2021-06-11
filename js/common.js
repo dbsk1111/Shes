@@ -63,10 +63,6 @@ $(function(){
 
   // 탑 버튼 초기화
   // $('.top_button_wrap').css('top',(wHeight + winScrollTop))
-  $('.top_button_wrap').css('bottom', ( dHeight - wHeight - winScrollTop ) + 10 +'px');
-
-
-
 
   // 헤더 스크롤 위치에 따라 노출
   $(window).scroll(function(){
@@ -95,33 +91,28 @@ $(function(){
     // 탑 버튼
     // dHeight = $(document).height();
     // wHeight = $(window).innerHeight();
-    let footerHeight = $('footer').outerHeight();
-    // let footerHeight = $('footer').offset().top;
+    // let footerHeight = $('footer').outerHeight();
+    let footerHeight = $('footer').offset().top;
 
-    $('.top_button_wrap').css('bottom', ( dHeight - wHeight - winScrollTop ) + 10 +'px');
-
-    // if( footerHeight <= (wHeight + winScrollTop) ){
-      // $('.top_button_wrap').css('bottom', (footerHeight + dHeight ) +'px')
-
+    if( footerHeight <= (wHeight + winScrollTop)){
+      // $('.top_button_wrap').css('transform','translateY(-'+((wHeight + winScrollTop) - footerHeight + 20)+'px)')
+      // $('#test').css('top',footerHeight)
       // $('.top_button_wrap').css('top', footerHeight)
       // $('.top_button_wrap').css('bottom',(wHeight + winScrollTop) - footerHeight)
-    // if( (dHeight - footerHeight) <= (wHeight + winScrollTop) ){
-      // if( $(window).width() < 500 ){
-        // $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 )/2 +'vw)')
-      // }else{
-        // $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 ) +'px)')
-      // }
-      // $('.top_button_wrap').addClass('fixed')
+    // if( dHeight - footerHeight <= (wHeight + winScrollTop)){
+      if( $(window).width() < 500 ){
+        $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 )/2 +'vw)')
+      }else{
+        $('.schedule').css('transform', 'translateY(-'+  ((wHeight + winScrollTop - footerHeight) / $('footer').outerHeight() * 30 ) +'px)')
+      }
+      $('.top_button_wrap').addClass('fixed')
 
       // $('.top_button_wrap').css('bottom',footerHeight)
-      // $('.top_button_wrap').css('background','blue')
-    // }else{
-      // $('.top_button_wrap').css('background','red')
+    }else{
       // $('.top_button_wrap').css('top',(wHeight + winScrollTop))
-      // $('.top_button_wrap').css('transform','translateY( 0 )')
-      // $('.schedule').css('transform', 'translateY(0)')
-      // $('.top_button_wrap').removeClass('fixed')
-    // }
+      $('.schedule').css('transform', 'translateY(0)')
+      $('.top_button_wrap').removeClass('fixed')
+    }
 
     // $('#test').css('top',((wHeight + winScrollTop) - footerHeight)).css('bottom',0)
 

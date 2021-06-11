@@ -679,22 +679,22 @@ section{
 }
 
 .top_button_wrap{
-  position: absolute;
-  // position: fixed;
+  // position: absolute;
   margin-bottom: 20px;
+  position: fixed;
   right: 20px;
-  // bottom: 0px;
+  bottom: 0px;
   // transform: translateY( - 20px );
   // transform: translateY( calc( -100% - 20px ) );
   z-index: 5;
-  // &.fixed{
-    // position: absolute;
-    // bottom: 100%;
+  &.fixed{
+    position: absolute;
+    bottom: 100%;
     // .schedule{
     //   position: absolute;
     //   transform: translate( 20px, 20px);
     // }
-  // }
+  }
   & > a{
     display: block;
     border-radius: 100%;
