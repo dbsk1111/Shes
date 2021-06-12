@@ -93,13 +93,14 @@ $(function(){
     }
 
     // 탑 버튼
-    // dHeight = $(document).height();
-    // wHeight = $(window).innerHeight();
+    dHeight = $(document).height();
+    wHeight = $(window).outerHeight();
+    winScrollTop = $(window).scrollTop();
     let footerHeight = $('footer').outerHeight();
     let footerTop = $('footer').offset().top;
 
     if( footerTop <= (wHeight + winScrollTop) ){
-      $('.top_button_wrap').css('bottom', '208px');
+      $('.top_button_wrap').css('bottom', footerHeight);
     }else{
       $('.top_button_wrap').css('bottom', ( dHeight - wHeight - winScrollTop ) + 10 +'px');
     }
