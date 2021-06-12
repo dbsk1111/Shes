@@ -1,6 +1,6 @@
 $(function(){
   let dHeight = $(document).height();
-  let wHeight = $(window).innerHeight();
+  let wHeight = $(window).outerHeight();
   let winScrollTop = $(window).scrollTop();
   // let footerHeight = $('footer').outerHeight();
   // let footerHeight = $('footer').outerHeight();
