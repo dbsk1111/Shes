@@ -581,7 +581,7 @@ section .inner .list_wrap li a div p + p {
 }
 
 #editoressey {
-  background: fixed url("../img/bg_05.png") center/cover;
+  background: fixed url("../img/bg_05.jpg") center/cover;
 }
 
 #editoressey .section_title * {
