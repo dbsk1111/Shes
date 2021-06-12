@@ -658,10 +658,9 @@ section{
 }
 
 .top_button_wrap{
-  position: fixed;
+  position: absolute;
   margin-bottom: 20px;
   right: 20px;
-  bottom: 0;
   z-index: 5;
   & > a{
     display: block;

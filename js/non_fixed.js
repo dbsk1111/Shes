@@ -59,6 +59,9 @@ $(function(){
     $('.slider_01, .slider_02, .slider_03, .slider_04').css('width','100%')
   })
 
+  // 탑 버튼 초기화
+  $('.top_button_wrap').css('bottom', ( dHeight - wHeight - winScrollTop ) + 10 +'px');
+
   // 헤더 스크롤 위치에 따라 노출
   $(window).scroll(function(){
     winScrollTop = $(window).scrollTop();
@@ -81,6 +84,16 @@ $(function(){
       $('header').addClass('on')
     }else{
       $('header').removeClass('on')
+    }
+
+    // 탑 버튼
+    let footerHeight = $('footer').outerHeight();
+    let footerTop = $('footer').offset().top;
+
+    if( footerTop <= (wHeight + winScrollTop) ){
+      $('.top_button_wrap').css('bottom', footerHeight);
+    }else{
+      $('.top_button_wrap').css('bottom', ( dHeight - wHeight - winScrollTop ) + 10 +'px');
     }
   })
 
