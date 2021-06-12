@@ -19,7 +19,6 @@ body{
 li{ list-style: none; }
 a{ color: $baseColor; }
 a:hover{ color: $hover; }
-// font-family: 'Noto Serif KR', serif;
 
 @keyframes banner_text{
   0%{
@@ -310,14 +309,11 @@ header{
     .slider_text{
       position: absolute;
       margin-top: 31%;
-      // width: 1180px;
-      // margin: 0 auto;
       z-index: 1;
       p{
         margin-bottom: 10px;
         color: $white;
         font-size: 18px;
-        // text-transform: capitalize;
         animation: banner_text 1s ease-in-out .5s both;
       }
       h2{
@@ -351,8 +347,6 @@ header{
 
 }
 section{
-  // 포지션 나중에 추가됐음
-  // 문제생기면 공지사항에만 추가하고, 통합에선 제외할 것
   position: relative;
   padding: 140px 0 140px;
   min-height: 200px;
@@ -364,10 +358,8 @@ section{
       text-align: center;
       margin-bottom: 60px;
       p:first-child{
-        // margin-bottom: 10px;
         color: $primary;
         font-size: 16px;
-        // text-transform: capitalize;
       }
       h3{
         font-family: 'Noto Serif KR', serif;
@@ -387,7 +379,6 @@ section{
       display: inline-block;
       position: relative;
       height: 100%;
-      // width: 1200px;
       li{
         float: left;
         position: relative;
@@ -396,7 +387,6 @@ section{
         // width: 355px;
         width: 278px;
         &:not(:first-child){
-          // margin-left: 55px;
           margin-left: 22px;
         }
         a{
@@ -437,12 +427,10 @@ section{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    // height: 389px;
     .section_title{
       margin: 0;
       width: 485px;
       text-align: left;
-
     }
     .section_img{
       width: 695px;
@@ -493,7 +481,6 @@ section{
             background: #fff;
             box-shadow: 5px 5px 10px rgba(0,0,0,.1);
             box-sizing: border-box;
-            // transition: .3s ease-in-out;
             &:before{
               content: '+';
               position: absolute;
@@ -502,8 +489,6 @@ section{
               right: 20px;
               color: $primary;
               font-size: 30px;
-            }
-            p{
             }
           }
           &:hover{
@@ -557,10 +542,6 @@ section{
       height: 590px;
       background: no-repeat center / cover;
     }
-    // .slider_01, .slider_02, .slider_03, .slider_04{
-    //   width: 100%;
-    //   position: relative;
-    // }
     .slider_01 .essey_img{
       background-image: url('../img/essay_01.jpg');
     }
@@ -645,7 +626,6 @@ section{
       margin-top: 21px;
       top: auto;
       left: 471px;
-      // bottom: 0;
     }
   }
   .bx-prev{
@@ -656,7 +636,6 @@ section{
     background: url('../img/slick_next.png') no-repeat center / 11px 19px;
   }
 }
-
 #notice{
   .inner .list_wrap li:first-child a:before{
     content: '';
@@ -680,21 +659,9 @@ section{
 
 .top_button_wrap{
   position: absolute;
-  // position: fixed;
   margin-bottom: 20px;
   right: 20px;
-  // bottom: 0px;
-  // transform: translateY( - 20px );
-  // transform: translateY( calc( -100% - 20px ) );
   z-index: 5;
-  // &.fixed{
-    // position: absolute;
-    // bottom: 100%;
-    // .schedule{
-    //   position: absolute;
-    //   transform: translate( 20px, 20px);
-    // }
-  // }
   & > a{
     display: block;
     border-radius: 100%;
@@ -716,7 +683,6 @@ section{
     }
   }
 }
-
 .screen_black{
   position: fixed;
   display: none;
@@ -753,19 +719,6 @@ section{
     height: 1px;
     background: #ddd;
   }
-  // .operating{
-  //   display: block;
-  //   position: fixed;
-  //   border-radius: 100%;
-  //   background: #905e58;
-  //   border: 1px solid #905e58;
-  //   width: 60px;
-  //   box-sizing: border-box;
-  //   img{
-  //     display: block;
-  //     width: 100%;
-  //   }
-  // }
 }
 
 footer{
@@ -801,10 +754,8 @@ footer{
       width: 220px;
       img{
         margin-top: 6px;
-        // width: 140px;
         height: 40px;
       }
-
     }
     .footer_text, address, a{
       color: #999;
@@ -856,8 +807,6 @@ footer{
   transform: translateY( 0 );
   opacity: 1;
 }
-
-
 @media screen and ( max-width: 1320px) {
   #clinic{
     .inner{
@@ -885,8 +834,6 @@ footer{
     }
   }
 }
-
-
 @media screen and ( max-width: 1280px ){
   body{
     overflow-x: hidden;
@@ -1040,8 +987,6 @@ footer{
       .essey_text{
         right: 4%;
         width: 500px;
-        // padding: 60px 40px;
-        // right: 0;
         .essey_title{
           margin-top: 35px;
           font-size: 25px;
@@ -1052,7 +997,6 @@ footer{
       }
     }
   }
-
   #notice:before{
     display: none;
   }
@@ -1108,10 +1052,6 @@ footer{
   .br_after{
     display: block;
   }
-  // .more_btn{
-  //   padding: 5px 25px;
-  //   font-size: 14px;
-  // }
   .deco_wrap{
     display: none;
   }
@@ -1124,11 +1064,9 @@ footer{
   .br_after{
     display: block;
   }
-
   input[type=checkbox]:checked ~ #gnb{
     display: block;
   }
-
   header{
     height: 60px;
     .logo{
@@ -1166,99 +1104,39 @@ footer{
   }
 
   #home{
-    // padding: 0;
     // 슬라이더 재설정
-    .bx-wrapper{
-      // border: none;
-      // margin: 0;
-      // margin: auto;
-      // width: 1180px;
-    }
     .bx-controls {
-      // width: auto;
-      // position: relative;
-      // margin: auto;
       .bx-pager{
-        // position: absolute;
-        // margin: auto;
         padding: 0 20px;
         width: 100%;
-        // left: 50%;
-        // bottom: 110px;
-        // text-align: left;
-        // transform: translateX( -50% );
       }
       .bx-pager-link{
-        // position: relative;
-        // margin-right: 25px;
         width: 12px;
         height: 12px;
-        // background: rgba(255,255,255,.6);
         &.active{
-        //   background: #fff;
           &:before{
-        //     content: '';
-        //     position: absolute;
             top: -5px;
             left: -5px;
             width: 18px;
             height: 18px;
-        //     border: 2px solid #ddd;
-        //     border-radius: 100%;
           }
         }
       }
     }
-    // .bx-pager-link.active:before{
-    //   content: '';
-    //   position: absolute;
-    //   top: 32px;
-    //   left: 1px;;
-    //   width: 12px;
-    //   height: 12px;
-    //   border: 2px solid #ddd;
-    //   border-radius: 100%;
-    // }
     // 슬라이더 재설정 끝
     .slider_list{
-      // position: relative;
-      // width: 100%;
       height: 700px;
       .slider_text{
-        // position: absolute;
-        // margin-top: 50.5%;
         margin-top: 340px;
-        // padding-top: 340px;
-
-        // padding: 0 20px;
-        // width: 100%;
-
-        // margin: 0 auto;
-        // z-index: 1;
         p{
-          // margin-bottom: 10px;
-          // color: #fff;
           font-size: 14px;
-          // // text-transform: capitalize;
-          // animation: banner_text 1s ease-in-out .5s both;
         }
         h2{
-          // font-family: 'Noto Serif KR', serif;
-          // color: #fff;
           font-size: 30px;
-          // font-weight: normal;
-          // line-height: 1.2;
-          // animation: banner_text 1s ease-in-out .9s both;
         }
         h2.fontsize60{
           font-size: 30px;
         }
-      }
-      .list_bg{
-        // width: 100%;
-        // height: 750px;
-        // background: center / cover;
-        // animation: banner_img 3s .5s ease-in-out both;
       }
       .list_bg_01{
         background-image: url('../img/visual01_m.jpg');
@@ -1271,7 +1149,6 @@ footer{
       }
     }
   }
-
   section{
     padding: 50px 0;
     .inner{
@@ -1442,13 +1319,7 @@ footer{
     padding: 0 20px;
   }
 }
-
 @media screen and ( max-width: 500px ){
-  // .more_btn{
-  //   margin-top: 4vw;
-  //   font-size: 2.8vw;
-  //   padding: 1vw 5vw;
-  // }
   header{
     height: 12vw;
     .logo{
@@ -1466,7 +1337,6 @@ footer{
     }
     #gnb{
       top: 12vw;
-      // 이건 모바일 메뉴 새로 만들어서 적용해야 됨
       li{
         height: 12vw;
         a{
@@ -1508,6 +1378,7 @@ footer{
     }
   }
   #home{
+    // 슬라이더 재설정
     .bx-wrapper{
     }
     .bx-controls {
@@ -1522,7 +1393,6 @@ footer{
           &:before{
             top: -1vw;
             left: -1vw;
-            // left: -1.028vw;
             width: 3.6vw;
             height: 3.6vw;
           }
@@ -1534,8 +1404,6 @@ footer{
       height: 140vw;
       .slider_text{
         margin-top: 68vw;
-        // padding-top: 340px;
-        // padding: 0 4vw;
         p{
           font-size: 2.8vw;
         }
@@ -1553,7 +1421,6 @@ footer{
   }
   section{
     padding: 5vw 0;
-    // min-height: 200px;
     .inner{
       .section_title{
         margin-bottom: 6vw;
@@ -1563,7 +1430,6 @@ footer{
         h3{
           font-size: 6vw;
           margin-bottom: 3vw;
-
         }
         h3 + p{
           font-size: 2.8vw;
@@ -1695,7 +1561,6 @@ footer{
     .footer_bottom{
       padding: 8vw 0;
       .footer_logo{
-        // width: 44vw;
         img{
           margin-top: 0px;
           width: 28vw;
@@ -1716,7 +1581,6 @@ footer{
           margin: 0 2vw;
           padding: 1vw 1vw 0;
           img{
-            // display: inline-block;
             width: 5vw;
             height: 5vw;
           }
